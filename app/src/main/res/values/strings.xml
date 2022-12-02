@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">myRecipes</string>
+    <array name="tipos_culinaria">
+        <item>Chinesa</item>
+        <item>Brasileira</item>
+        <item>Coreana</item>
+        <item>Francesa</item>
+        <item>BBQ</item>
+        <item>Italiana</item>
+        <item>Japonesa</item>
+        <item>Mexicana</item>
+    </array>
+
+</resources>
