@@ -7,26 +7,62 @@
     tools:context=".SaltyRecipesRegisterActivity"
     android:orientation="vertical">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/menu_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Spinner
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
             android:id="@+id/culinary"
-            android:entries="@array/tipos_culinaria"
-            style="@style/Widget.AppCompat.Spinner.DropDown" />
-        <com.google.android.material.textfield.MaterialAutoCompleteTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:layout_width="290dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:entries="@array/tipos_culinaria" />
+    </LinearLayout>
 
-        </com.google.android.material.textfield.MaterialAutoCompleteTextView>
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="487dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_register"
+            android:layout_width="393dp"
+            android:layout_height="323dp"
+            android:hint="text" />
+
 
 
     </LinearLayout>
+<View
+android:layout_width="match_parent"
+android:layout_height="40dp"
+android:background="@color/colorPrimary"
+android:layout_marginTop="29dp"
+android:layout_marginLeft="8dp"
+android:layout_marginRight="8dp" />
+
+
+<Button
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/btn_register"
+android:layout_marginTop="8dp"
+android:layout_marginLeft="8dp"
+android:layout_marginRight="8dp"
+android:text="Salvar"
+style="@style/Widget.MaterialComponents.Button.UnelevatedButton" />
+
+</LinearLayout>

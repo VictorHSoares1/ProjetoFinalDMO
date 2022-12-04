@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">myRecipes</string>
+    <string name="enter" />
+    <string name="menu_logout" />
+    <string name="menu_register_sweet" />
+    <string name="menu__new_recipe_salty" />
+    <string name="menu_account" />
+    <string name="menu_home" />
+    <string name="toggle_open" />
+    <string name="toggle_close" />
+
+
     <array name="tipos_culinaria">
         <item>Chinesa</item>
         <item>Brasileira</item>
