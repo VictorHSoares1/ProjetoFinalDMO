@@ -10,6 +10,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private TextView txtTitle;
+    private TextView txtLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
 
         txtTitle = findViewById(R.id.toolbar_title);
         txtTitle.setText(getString(R.string.app_name));
+        txtLogin = navigationView.getHeaderView(0).findViewById(R.id.header_profile_name);
+        txtLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, UserLoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         drawerLayout = findViewById(R.id.nav_drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.toggle_open, R.string.toggle_close);
@@ -51,12 +62,19 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case R.id.nav_account:
-                        Toast.makeText(MainActivity.this, "Minha Conta", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(MainActivity.this,UserProfileActivity.class);
+                        startActivity(intent);
                         break;
                     case R.id.nav_register_salty:
                         intent = new Intent(MainActivity.this,SaltyRecipesRegisterActivity.class);
                         startActivity(intent);
                         break;
+
+                    //case R.id.nav_account:
+                        //intent = new Intent(MainActivity.this, UserProfileActivity.class);
+                        //startActivity(intent);
+                        //break;
+
                     //case R.id.nav_ranking:
                         //Toast.makeText(MainActivity.this, "Classificação", Toast.LENGTH_SHORT).show();
                        // break;
