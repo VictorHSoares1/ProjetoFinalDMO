@@ -69,18 +69,14 @@ public class MainActivity extends AppCompatActivity {
                         intent = new Intent(MainActivity.this,SaltyRecipesRegisterActivity.class);
                         startActivity(intent);
                         break;
-
-                    //case R.id.nav_account:
-                        //intent = new Intent(MainActivity.this, UserProfileActivity.class);
-                        //startActivity(intent);
-                        //break;
-
-                    //case R.id.nav_ranking:
-                        //Toast.makeText(MainActivity.this, "Classificação", Toast.LENGTH_SHORT).show();
-                       // break;
-                    //case R.id.nav_statitics:
-                       // Toast.makeText(MainActivity.this, "Estatísticas", Toast.LENGTH_SHORT).show();
-                       // break;
+                    case R.id.nav_register_sweet:
+                        intent = new Intent(MainActivity.this,SweetRecipesActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.nav_register_drinks:
+                        intent = new Intent(MainActivity.this,DrinksRecipesActivity.class);
+                        startActivity(intent);
+                        break;
                     case R.id.nav_logout:
                         Toast.makeText(MainActivity.this, "Sair", Toast.LENGTH_SHORT).show();
                         break;

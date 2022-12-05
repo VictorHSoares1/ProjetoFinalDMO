@@ -8,7 +8,7 @@
     <string name="menu__new_recipe_salty">Pratos Salgados(Receita) </string>
     <string name="menu_register_drink">Receitas De Drinks(Receita)</string>
     <string name="menu_account">Conta </string>
-    <string name="menu_home" >Home </string>
+    <string name="menu_home">Home </string>
     <string name="toggle_open" />
     <string name="toggle_close" />
 
@@ -41,6 +41,13 @@
         <item>Mexicana</item>
         <item>Outros...</item>
     </array>
+    <!-- Array de tipos de bebida-->
+    <array name="tipos_bebida">
+        <item>Alcoólicas</item>
+        <item>Não alcoólicas</item>
+
+    </array>
+
 
     <!-- Tela Usario Perfil -->
 
@@ -53,7 +60,7 @@
     <string name="user_profile_update">ATUALIZAR</string>
     <string name="user_profile_title">Perfil</string>
     <string name="user_profile_aniversary">Data de Aniversário</string>
-
+    <string name="user_profile_cep" />
 
 
     <!-- array com os nomes da Unidades Federativas do Brasil -->
