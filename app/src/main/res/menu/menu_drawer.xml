@@ -20,6 +20,12 @@
         android:title="@string/menu_register_sweet"
         android:icon="@drawable/ic_menu_recipes_sweet"/>
 
+    <item android:id="@+id/nav_register_drinks"
+        android:title="@string/menu_register_drink"
+        android:icon="@drawable/ic_menu_drinks"/>
+
+
+
     <item android:id="@+id/nav_logout"
         android:title="@string/menu_logout"
         android:icon="@drawable/ic_menu_logout"/>

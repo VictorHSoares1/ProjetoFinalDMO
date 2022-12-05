@@ -24,31 +24,25 @@
             android:textSize="25dp"/>
 
         <LinearLayout
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="484dp"
             android:layout_marginHorizontal="5dp"
-            android:orientation="vertical"
             android:layout_marginVertical="20dp"
             android:background="@drawable/border_circular"
-            android:paddingBottom="620dp">
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
 
-            <TextView
-                android:id="@+id/text_recipes_area"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Ultimas Receitas Postadas:"
-                android:textColor="@color/black"
-                android:textSize="30dp"
-                android:textStyle="italic" />
 
             <ListView
                 android:id="@+id/recipes_list"
-                android:layout_width="352dp"
+                android:layout_width="wrap_content"
                 android:layout_height="544dp"
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/border_circular"></ListView>
+                android:background="@drawable/border_circular">
+
+            </ListView>
         </LinearLayout>
 
 
