@@ -39,12 +39,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        txtTitle = findViewById(R.id.toolbar_title);
+        txtTitle.setText(getString(R.string.app_name));
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        txtTitle = findViewById(R.id.toolbar_title);
-        txtTitle.setText(getString(R.string.app_name));
+
 
         drawerLayout = findViewById(R.id.nav_drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.toggle_open, R.string.toggle_close);
