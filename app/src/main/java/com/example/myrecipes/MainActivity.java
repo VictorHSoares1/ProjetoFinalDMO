@@ -9,8 +9,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
+import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +28,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        drawerLayout = findViewById(R.id.nav_drawer_layout);
+        navigationView=findViewById(R.id.nav_view);
+        txtLogin = navigationView.getHeaderView(0).findViewById(R.id.header_profile_name);
+        txtLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, UserLoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -35,15 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
         txtTitle = findViewById(R.id.toolbar_title);
         txtTitle.setText(getString(R.string.app_name));
-        txtLogin = navigationView.getHeaderView(0).findViewById(R.id.header_profile_name);
-        txtLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, UserLoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
 
         drawerLayout = findViewById(R.id.nav_drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.toggle_open, R.string.toggle_close);

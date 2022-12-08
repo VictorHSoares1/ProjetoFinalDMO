@@ -11,8 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@android:color/white"
-        android:text="My_recipes"
-        android:textStyle="italic"
+        android:text="Titulo"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title"/>
 
 </androidx.appcompat.widget.Toolbar>

@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class UserLoginActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
-    private TextView txtTitulo;
+    private TextView txtTitle;
     private Button btnCadastrar;
 
     @Override
@@ -25,8 +25,8 @@ public class UserLoginActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        txtTitulo = findViewById(R.id.toolbar_title);
-        txtTitulo.setText(R.string.user_login_title);
+        txtTitle= findViewById(R.id.toolbar_title);
+        txtTitle.setText(R.string.user_login_title);
 
         btnCadastrar = findViewById(R.id.btn_login_cadastrar);
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
